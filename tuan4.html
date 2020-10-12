@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web development</title>
+    <style>
+        .topnavbar a {
+            float: right;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 16px 16px;
+            text-decoration: none;
+        }
+        .listside {
+            top: 50px;
+            display: flex;
+        }
+        .btlist {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px 16px;
+            font-size: 40px;
+            display: block;
+            margin-left: -8px;
+            margin-top: 42px;
+            height: 800px;
+            position: fixed;
+        }
+        .menu ul {
+            margin-top: 42px;
+            width: 200px;
+            margin-left: 182px;
+            background-color: antiquewhite;
+            height: 100%;
+            display: none;
+            position: fixed;
+        }
+        ul li {
+            display: block;
+            width: 200px;
+            margin-left: -30px;
+        }
+        ul li a {
+            display: block;
+            text-decoration: none;
+            padding: 6px 8px;
+        }
+        .btlist:hover {
+            background-color: darkcyan;
+        }
+        .btlist:hover+.menu ul {
+            display: block;
+        }
+        .btlist:hover+.menu {
+            margin-right: 200px;
+        }
+        @media(max-width: 698px) {
+            body div.listside .btlist {
+                height: 50PX;
+                margin-top: -8px;
+                background-color: #4CAF50;
+                color: white;
+                font-size: 10px;
+                display: block;
+            }
+            body div.listside .menu ul {
+                margin-left: -8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnavbar" style="background-color: #333; height: 50px; top: 0; width: 100%; position: fixed; left: 0">
+        <a href="../javascript.html">Javascript</a>
+        <a href="../css.html">CSS</a>
+        <a href="../index.html">HTML</a>
+    </div>
+    <div class="listside">
+        <button class="btlist">click me!</button>
+
+        <div class="menu">
+            <ul class="ulis ">
+                <li><a class="alist" href="html/forms.html">Forms</a></li>
+                <li><a class="alist" href="html/forms.html">Forms</a></li>
+                <li><a class="alist" href="html/forms.html">Forms</a></li>
+                <li><a class="alist" href="html/forms.html">Forms</a></li>
+            </ul>
+        </div>
+        <div style="margin-left: 300px; padding: 20px; margin-top: 50px; display: inline; ">
+            <h1>This web is about HTML</h1>
+            <h1>This web is about CSS</h1>
+            <h1>This web is about JAVA</h1>
+        </div>
+    </div>
+</body>
+</html>
